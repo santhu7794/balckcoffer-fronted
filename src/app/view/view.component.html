@@ -1,0 +1,32 @@
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>_id</th>
+      <th>intensity</th>
+      <th>likelihood</th>
+      <th>relevance</th>
+      <th>start_year</th>
+      <th>end_year</th>
+      <th>country</th>
+      <th>topic</th>
+      <th>region</th>
+      <th>city</th>
+      <th>published</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of santhu">
+        <td>{{p._id}}</td>
+      <td>{{ p.intensity }}</td>
+      <td>{{ p.likelihood }}</td>
+      <td>{{ p.relevance }}</td>
+      <td>{{ p.start_year }}</td>
+      <td>{{ p.end_year }}</td>
+      <td>{{ p.country }}</td>
+      <td>{{ p.topic }}</td>
+      <td>{{ p.region }}</td>
+      <td>{{ p.city }}</td>
+      <td>{{ p.published }}</td>
+    </tr>
+  </tbody>
+</table>

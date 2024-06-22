@@ -1,0 +1,82 @@
+<div class="container">
+  <form [formGroup]="adminLogin">
+    <div class="row p-5">
+      <div class="col-sm-6">
+        <img src="assets/admin.jpg" width="100%" />
+      </div>
+      <div class="col-sm-6">
+        <div class="card shadow">
+          <div class="card-header">
+            <h5 class="">welcome to black coffer</h5>
+            <p class="">
+              Please sign-in to your account and start the adventure
+            </p>
+            <div class="admin text-center">
+              <p class="">
+                Admin email:<span class="text-light">"d&#64;gmail.com"</span>
+                Password:"<span class="text-light">demo</span>"
+              </p>
+            </div>
+          </div>
+          <div class="card-body">
+            <label class="form-label">email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="enter email"
+              formControlName="email"
+            />
+            <label class="form-label">password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="enter password"
+              formControlName="password"
+            />
+          </div>
+          <div class="row">
+            <div class="col-sm-2"><input type="checkbox" /></div>
+            <div class="col-sm-8">
+              <a
+                routerLink="forgetpassword"
+                class="text-decoration-none text-center"
+                >ForgetPassword?</a
+              >
+            </div>
+          </div>
+          <div class="text-center pb-3">
+            <button
+              class="btn btn-dark w-50 text"
+              type="submit"
+              (click)="login()"
+            >
+              login
+            </button>
+          </div>        
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="text-muted">
+                <a href="" class="nav-link"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="text-muted">
+                <a href="" class="nav-link"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="text-muted">
+                <a href="" class="nav-link"><i class="bi bi-google"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="text-muted">
+                <a href="" class="nav-link"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
