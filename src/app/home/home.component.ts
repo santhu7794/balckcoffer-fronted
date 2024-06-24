@@ -23,15 +23,20 @@ export class HomeComponent implements OnInit {
   constructor(private form: FormBuilder, private api: VisualizationService,private router:Router) {}
   ngOnInit(): void {
     this.visualdata = this.form.group({
+     
       intensity: [''],
       likelihood: [''],
       relevance: [''],
-      year: [''],
+      start_year: [''],
+      end_year: [''],
       country: [''],
       topic: [''],
       region: [''],
       city: [''],
       published: [''],
+      sector: [''],
+      pestle: [''],
+      source: [''],
     });
     // this.api.getdata().subscribe((res: any) => {
     //   this.verify = res;

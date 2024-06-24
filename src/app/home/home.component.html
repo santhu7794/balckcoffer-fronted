@@ -19,14 +19,11 @@
                    <h5> Visualation Dashboard</h5>
                 </div>
                 <div class="card-body">
-                  <div class="col-sm">
-                    <label class="form-label">_id</label>
-                    <input type="text"class="form-control" placeholder="enter id" formControlName="_id">
-                </div>
+                
                     <div class="col-sm">
                         <label class="form-label">intensity</label>
                         <input type="text"class="form-control" placeholder="enter Intensity" formControlName="intensity">
-                    </div>+
+                    </div>
             
                     <div class="col-sm">
                         <label class="form-label">likelihood</label>
@@ -66,6 +63,19 @@
                         <label class="form-label">published</label>
                         <input type="date"class="form-control" placeholder="enter published" formControlName="published">
                     </div>
+                    <div class="col-sm">
+                      <label class="form-label">sector</label>
+                      <input type="text"class="form-control" placeholder="enter sector" formControlName="sector">
+                  </div>
+                  <div class="col-sm">
+                    <label class="form-label">pestle</label>
+                    <input type="text"class="form-control" placeholder="enter pestle" formControlName="pestle">
+                </div>
+                <div class="col-sm">
+                  <label class="form-label">source</label>
+                  <input type="text"class="form-control" placeholder="enter source" formControlName="source">
+              </div>
+
                     <div class="col-sm text-center p-2">
                         <button  class="btn btn-dark w-75"  type="submit" (click)="add()">Submit</button>
                       </div>
